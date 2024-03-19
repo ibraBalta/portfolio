@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+header {
+    color: #fff;
+    padding: 20px 0; /* Ajustement du padding pour un alignement vertical */
+    min-height: 60px; /* Ajustement de la hauteur si nécessaire */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em; /* Taille de la police réduite */
+    transition: color 0.3s ease-in-out; /* Transition douce pour le changement de couleur */
+}
+
+nav ul {
+    display: flex; /* Utilisation de Flexbox pour un alignement plus flexible */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    list-style: none;
+    height: 100%; /* S'assure que la liste utilise toute la hauteur du header */
+}
+
+nav ul li {
+    display: inline-block; /* Garde les éléments en ligne mais permet le padding */
+    margin: 0px 10px; /* Espacement horizontal entre les éléments */
+    text-align: center;
+    border-bottom: 2px solid transparent; /* Bordure transparente initiale */
+    transition: border-color 0.3s ease-in-out; /* Transition pour la couleur de la bordure */
+}
+
+nav ul li a {
+    display: block; /* Fait que le lien remplisse entièrement le <li> */
+    padding: 10px 15px; /* Ajustement du padding pour un meilleur effet visuel */
+    color: black; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    text-transform: uppercase; /* Texte en majuscules */
+}
+
+
+
+nav ul li:hover {
+    border-color: black; /* Change la couleur de la bordure au survol */
+}
+
+#activepage{
+    border-color: black;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left; /* Centre le texte horizontalement */
+}
+
+main section {
+    background-color: white; /* Couleur de fond pour le cadre */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombre subtile pour le cadre */
+    padding: 40px; /* Espace intérieur pour le contenu */
+    margin: 20px; /* Marge extérieure pour séparer le cadre du reste */
+    border-radius: 10px; /* Bordures arrondies pour le cadre */
+    max-width: 80%; /* Largeur maximale du cadre */
+}
+
+h1, h3, p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2D2D2D; /* Assorti au header */
+    color: white;
+    position: relative; /* Position ajustée pour éviter les problèmes de placement */
+    bottom: 0;
+    width: 100%;
+}
+
+
+#autoevaluation {
+    position: relative;
+    left: -580px; /* Décale la section vers la gauche */
+}
+
+
+/* Style pour le conteneur qui englobe le texte et l'image */
+.text-image-container {
+    display: flex; /* Utilise Flexbox pour l'alignement */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: space-between; /* Répartit l'espace entre le texte et l'image */
+    padding: 20px;
+}
+
+.text-content {
+    max-width: 20%; /* Ajustez selon la largeur désirée pour le texte */
+}
+
+.text-content-filtres{
+    max-width: 30%;
+}
+
+#imageHotels1 {
+    width: 80%; /* Ajustez selon la largeur désirée pour l'image */
+    height: auto; /* Garde le ratio de l'image */
+}
+
+#imageCodeHotel1{
+    width: 70%;
+    height: auto;
+}
+
+#imageDetroit{
+    width: 75%;
+    height: auto;
+}
+
+#imageGitHub{
+    width: 75%;
+    height: auto;
+}
+
+#imageGantt{
+    width: 100%;
+    height: auto;
+}
+
+#lpfiltersImage{
+    width: 60%;
+    height: auto;
+}
+
+#filtresResImaage{
+    width: 50%;
+    height: auto;
+}
